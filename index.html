@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Tutorial</title>
+  <link rel="stylesheet" href="static/css/bootstrap.min.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-secondary navbar-dark fixed-top">
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#section1">Section 1</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#section2">Section 2</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="#section3">Section 3</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+        Tutorials
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="#section41">Tutorial 1</a>
+        <a class="dropdown-item" href="#section42">Tutorial 2</a>
+        <a class="dropdown-item" href="#section43">Tutorial 3</a>
+        <a class="dropdown-item" href="#section44">Tutorial 4</a>
+      </div>
+    </li>
+  </ul>
+</nav>
+<div id="section41" class="container-fluid bg-light" style="padding-top:70px;padding-bottom:70px">
+  <h1>Tutorial 1</h1>
+  <div class="container">
+    <p>
+      <hr>
+      Develop HTML website with Bootstrap 4 responsive fixed width container.
+      The HTML element with Bootstrap container must include an image using tag &lt;img&gt; and text in paragraph (tag &lt;p&gt;). The image should be in the center of the web page. The text must be aligned to the left. The web page must include the info on the current date and time placed in different lines; please use JavaScript for that.
+      <hr>
+      <img src = "static/images/pic.jpg" class="container" style="text-align: center;">
+    </p>
+    <hr>
+  </div>
+  <p id="p1"></p>
+  <script>
+     var today = new Date();
+     var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+     var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+     document.getElementById("p1").innerHTML = date + "<br>" + time;
+  </script>
+</div>
+<div id="section42" class="container-fluid bg-light" style="padding-top:70px;padding-bottom:70px">
+  <h1>Tutorial 2</h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+<div id="section43" class="container-fluid bg-light" style="padding-top:70px;padding-bottom:70px">
+  <h1>Tutorial 3</h1>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+  <p>Try to scroll this section and look at the navigation bar while scrolling! Try to scroll this section and look at the navigation bar while scrolling!</p>
+</div>
+<div id="section44" class="container-fluid bg-light" style="padding-top:70px;padding-bottom:70px">
+  <h1>Tutorial 4</h1>
+  <p>University education is very important :)</p>
+</div>
+</body>
+</html>
