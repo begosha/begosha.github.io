@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html manifest="cmf.manifest">
+<head>
+<title>Offline Web Application with Cats</title>
+<script>
+function changeImage()
+{
+document.images["jsbutton"].src= "static/images/black1.jpg";
+return true;
+}
+function changeImageMore()
+{
+document.images["jsbutton"].src= "static/images/white1.jpg";
+return true;
+}
+</script>
+</head>
+<body>
+<img name="jsbutton" src="static/images/black1.jpg" width="25%" height="25%" border="0">
+<br><input type=button onclick="changeImage()" value="Lets Show Black Cat"></input>
+&nbsp;&nbsp;<input type=button onclick="changeImageMore()" value="Lets Show White Cat"></input>
+</body>
+</html>
